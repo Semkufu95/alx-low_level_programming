@@ -1,4 +1,4 @@
- <stdio.h>
+#include <stdio.h>
 #include <unistd.h>
 /**
   * A C program that prints a line to the standard error
@@ -6,6 +6,6 @@
   */
 int main(void)
 {
-	fputs"and that piece of art is useful\" - Dora Korpar, 2015-10-19\r", stdout);
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\r", stdout);
 	return (1);
 }
