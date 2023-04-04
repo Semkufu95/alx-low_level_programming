@@ -2,8 +2,8 @@
 
 /**
   * _strcat - This function concatenate two strings
-  * @src - source string
-  * @dest - destination string
+  * @src: source string
+  * @dest: destination string
   *
   * Return: destination string
   */
@@ -19,7 +19,8 @@ char *_strcat(char *dest, char *src)
 	while (src[b] != '\0')
 	{
 		dest[a] = src[b];
-		a++; b++;
+		a++;
+		b++;
 	}
 	return (dest);
 }
