@@ -8,13 +8,9 @@
 
 void _puts_recursion(char *s)
 {
-	if (*s)
+	while (*s != '\0')
 	{
-		write(STDOUT_FILENO, s, 1);
-		_putchar(s + 1);
+		_putchar(*s++);
 	}
-	else
-	{
-		write(STDOUT_FILENO, "\n", 1);
-	}
+	_putchar('\n');
 }
