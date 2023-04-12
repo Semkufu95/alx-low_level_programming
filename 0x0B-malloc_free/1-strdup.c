@@ -19,6 +19,7 @@ char *_strdup(char *str)
 	m = 0;
 
 	while (str[m] != '\0')
+		m++;
 	{
 		arry = malloc((sizeof(char)) * (m + 1));
 	}
