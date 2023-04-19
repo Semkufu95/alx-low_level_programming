@@ -25,7 +25,8 @@ struct dog
   * @owner: input name of dog's owner
   * Return: NULL if memory allocation fail, pointer to new detail of struct dog
   */
-struct dog *new_dog(char *name, char *owner, float age)
+/**
+  struct dog *new_dog(char *name, char *owner, float age)
 {
 	struct dog *my_dog;
 
@@ -37,7 +38,7 @@ struct dog *new_dog(char *name, char *owner, float age)
 	my_dog->owner = owner;
 	return (my_dog);
 }
-
+*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
