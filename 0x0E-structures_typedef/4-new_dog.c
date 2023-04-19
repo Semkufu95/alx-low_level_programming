@@ -4,6 +4,7 @@
 /**
   * _strlen - function to return the length of string
   * @str: string
+  * Return: length of a string
   */
 
 int _strlen(char *str)
@@ -24,12 +25,12 @@ int _strlen(char *str)
   * Return: pointer to dest
   */
 
-char _strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int a, b;
 
 	a = 0;
-	while (str[a] != '\0')
+	while (src[a] != '\0')
 	{
 		a++;
 	}
@@ -37,6 +38,7 @@ char _strcpy(char *dest, char *src)
 	{
 		dest[b] = src[b];
 	}
+	dest[b] = '\0';
 	return (dest);
 }
 
