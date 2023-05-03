@@ -1,9 +1,9 @@
 #include "lists.h"
 
-/** sum_listint - prints the sum of all data
-  *
-  * Return: return 0 if no data found, else return sum
-  */
+/**
+ *sum_listint - prints the sum of all data
+ * Return: return 0 if no data found, else return sum
+ */
 
 int sum_listint(listint_t *head)
 {
