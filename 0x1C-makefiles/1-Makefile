@@ -2,8 +2,10 @@ CC = gcc
 SRC := $(wildcard *.c)
 SCHOOL = school
 
-all:
-	${CC} -o ${SCHOOL}  ${SRC}
+all: ${SCHOOL}
+
+${SCHOOL}: ${SRC}
+	${CC} -o ${SCHOOL} ${SRC}
 
 clean:
 	rm -f ${SCHOOL}
