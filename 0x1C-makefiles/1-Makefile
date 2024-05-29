@@ -1,9 +1,9 @@
 CC = gcc
-
 SRC := $(wildcard *.c)
+SCHOOL = school
 
 all:
-	${CC} -o school ${SRC}
+	${CC} -o ${SCHOOL}  ${SRC}
 
 clean:
-	rm -f school
+	rm -f ${SCHOOL}
