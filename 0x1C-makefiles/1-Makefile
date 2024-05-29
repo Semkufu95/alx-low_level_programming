@@ -3,4 +3,7 @@ CC = gcc
 SRC := $(wildcard *.c)
 
 all:
-	${CC} ${SRC} -o school
+	${CC} -o school ${SRC}
+
+clean:
+	rm -f school
