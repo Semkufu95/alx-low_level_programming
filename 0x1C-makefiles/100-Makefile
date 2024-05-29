@@ -1,0 +1,30 @@
+# Define variables
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
+
+main.o: main.c m.h
+	$(CC) $(CFLAGS) -c main.c -o main.o
+
+school.o: school.c m.h
+	$(CC) $(CFLAGS) -c school.c -o school.o
+
+clean:
+	$(RM) $(NAME)
+	$(RM) *~ \#*\# *.swp
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
+
+.PHONY: all clean oclean fclean re
