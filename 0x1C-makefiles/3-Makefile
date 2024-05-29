@@ -15,11 +15,10 @@ ${NAME}: ${OBJ}
 	${CC} -c -o $< $@
 
 clean:
-	${RM} ${NAME}
-	${RM} *~ \#*\# *.swp
+	-${RM} ${NAME} *~ \#*\# *.swp
 
 oclean:
-	${RM} ${OBJ}
+	-${RM} ${OBJ}
 
 fclean: clean oclean
 

@@ -17,11 +17,10 @@ school.o: school.c m.h
 	$(CC) $(CFLAGS) -c school.c -o school.o
 
 clean:
-	$(RM) $(NAME)
-	$(RM) *~ \#*\# *.swp
+	-$(RM) ${NAME} *~ \#*\# *.swp
 
 oclean:
-	$(RM) $(OBJ)
+	-$(RM) $(OBJ)
 
 fclean: clean oclean
 
